@@ -14,6 +14,10 @@ export class RenderExampleComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.findId();
+  }
+
+  private findId() {
     console.log('DIV的id：' + this.demoDiv.nativeElement.id)
     ; // DIV的id：demoDiv
     this.renderer.setStyle(this.demoDiv.nativeElement, 'background-color', 'red');
