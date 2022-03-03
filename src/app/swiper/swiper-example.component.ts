@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import SwiperCore from 'swiper';
+import { Component, ViewEncapsulation } from '@angular/core';
+import SwiperCore, { Pagination, SwiperOptions } from 'swiper';
+
+SwiperCore.use([Pagination]);
 
 @Component({
   selector: 'app-swiper',
   templateUrl: './swiper-example.component.html',
-  styleUrls: ['./swiper-example.component.scss']
+  styleUrls: ['./swiper-example.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SwiperExampleComponent {
 
   constructor() {
   }
 
-  onSwiper([swiper]: any) {
-    console.log(swiper);
-  }
-
-  onSlideChange() {
-    console.log('slide change');
-  }
+  swiperConfig: SwiperOptions = {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  };
 }
