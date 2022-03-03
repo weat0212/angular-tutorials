@@ -166,3 +166,5 @@ dist
 *.iml
 out
 gen
+
+.vscode

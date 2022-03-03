@@ -6,8 +6,7 @@ import { SwiperComponent } from "./swiper/swiper.component";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SwiperComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
