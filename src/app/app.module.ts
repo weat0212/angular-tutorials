@@ -6,13 +6,17 @@ import { SwiperExampleModule } from "./swiper/swiper-example.module";
 import { RenderExampleComponent } from './render/render-example.component';
 import { HighlightDirective } from './shared/directive/highlight.directive';
 import { TestComponent } from './test/test.component';
+import { RoutingComponent } from './routing/routing.component';
+import { RoutingSiblingComponent } from './routing-sibling/routing-sibling.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RenderExampleComponent,
     HighlightDirective,
-    TestComponent
+    TestComponent,
+    RoutingComponent,
+    RoutingSiblingComponent
   ],
   imports: [
     BrowserModule,
