@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SwiperComponent } from "./swiper.component";
+import { SwiperExampleComponent } from "./swiper-example.component";
 
 const routes: Routes = [
-  { path: '', component: SwiperComponent }
+  { path: '', component: SwiperExampleComponent }
 ];
 
 @NgModule({
