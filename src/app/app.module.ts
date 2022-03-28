@@ -8,6 +8,8 @@ import { HighlightDirective } from './shared/directive/highlight.directive';
 import { TestComponent } from './test/test.component';
 import { RoutingComponent } from './routing/routing.component';
 import { RoutingSiblingComponent } from './routing-sibling/routing-sibling.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { ChildComponent } from './content-projection/child/child.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { RoutingSiblingComponent } from './routing-sibling/routing-sibling.compo
     HighlightDirective,
     TestComponent,
     RoutingComponent,
-    RoutingSiblingComponent
+    RoutingSiblingComponent,
+    ContentProjectionComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
