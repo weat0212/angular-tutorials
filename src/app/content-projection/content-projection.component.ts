@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentProjectionComponent implements OnInit {
 
-  constructor() { }
+  rememberMe: boolean | undefined;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  rememberUser(remember: boolean) {
+    this.rememberMe = remember;
+  }
 }

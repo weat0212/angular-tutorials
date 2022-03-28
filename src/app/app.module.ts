@@ -10,6 +10,7 @@ import { RoutingComponent } from './routing/routing.component';
 import { RoutingSiblingComponent } from './routing-sibling/routing-sibling.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { ChildComponent } from './content-projection/child/child.component';
+import { AuthRememberComponent } from './content-projection/auth-remember/auth-remember.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChildComponent } from './content-projection/child/child.component';
     RoutingComponent,
     RoutingSiblingComponent,
     ContentProjectionComponent,
-    ChildComponent
+    ChildComponent,
+    AuthRememberComponent
   ],
   imports: [
     BrowserModule,
