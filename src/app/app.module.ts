@@ -11,6 +11,12 @@ import { RoutingSiblingComponent } from './routing-sibling/routing-sibling.compo
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { ChildComponent } from './content-projection/child/child.component';
 import { AuthRememberComponent } from './content-projection/auth-remember/auth-remember.component';
+import { FormChangeComponent } from './form-change/form-change.component';
+import { ReactiveFormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatInputModule } from "@angular/material/input";
+import { MatNativeDateModule } from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -22,14 +28,21 @@ import { AuthRememberComponent } from './content-projection/auth-remember/auth-r
     RoutingSiblingComponent,
     ContentProjectionComponent,
     ChildComponent,
-    AuthRememberComponent
+    AuthRememberComponent,
+    FormChangeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperExampleModule
+    SwiperExampleModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

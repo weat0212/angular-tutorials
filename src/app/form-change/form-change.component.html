@@ -1,0 +1,18 @@
+<div [formGroup]="reactiveForm" xmlns="http://www.w3.org/1999/html">
+  姓氏：<input formControlName="firstname"><br><br>
+  名字：<input formControlName="lastname"><br><br>
+  <div formGroupName="address">
+    城市：<input formControlName="city"><br><br>
+    路：<input formControlName="street"><br><br>
+  </div>
+  <br><br>
+  起始日：<input type="text" placeholder="請輸入起始日期" name="source"
+         matInput [matDatepicker]="picker" [formControl]="startDate" [max]="maxDate">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+  <br><br>
+  結束日：<input type="text" placeholder="請輸入起始日期" name="source"
+         matInput [matDatepicker]="picker1" [formControl]="endDate" [min]="minDate">
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1></mat-datepicker>
+</div>
