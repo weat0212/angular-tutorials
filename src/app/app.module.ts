@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatInputModule } from "@angular/material/input";
 import { MatNativeDateModule } from "@angular/material/core";
+import { TwDate2CalendarPipe } from './shared/pipes/TwDate2Calendar.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MatNativeDateModule } from "@angular/material/core";
     ChildComponent,
     AuthRememberComponent,
     FormChangeComponent,
+    TwDate2CalendarPipe,
   ],
   imports: [
     BrowserModule,
